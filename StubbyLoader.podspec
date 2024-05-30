@@ -40,4 +40,7 @@ TODO: Add long description of the pod here.
   # s.frameworks = 'UIKit', 'MapKit'
   s.dependency 'Swifter', '~> 1.5.0'
   s.dependency 'Yams', '~> 5.0.5'
+  s.info_plist = {
+      'STUBBY_PATH' => '${PODS_ROOT}/..'
+  }
 end

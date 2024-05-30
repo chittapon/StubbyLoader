@@ -18,7 +18,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  StubbyLoader: 0b4c178ff7908b83a0f732d25c978d2491fe4a32
+  StubbyLoader: 52d5913d094efcda7f2f9e0ab3fcc7b433ad1333
   Swifter: e71dd674404923d7f03ebb03f3f222d1c570bc8e
   Yams: e10dae147f517ed57ecae37c5e8681bdf8fcab65
 

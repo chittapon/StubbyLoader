@@ -31,7 +31,9 @@ public final class StubbyLoaderEnvironment {
     ) {
         _path = path
         _configFile = configFile
-        _port = UInt16(port ?? 8080)
+        if let port = port {
+            _port = UInt16(port)
+        }
     }
     
     func loadConfig() {
@@ -39,8 +41,8 @@ public final class StubbyLoaderEnvironment {
         if _path == nil, let path = environment[STUBBY_PATH] {
             _path = path
         }
-        if _port == nil, let port = environment[STUBBY_PORT], let port = UInt16(port) {
-            self._port = port
+        if _port == nil, let port = environment[STUBBY_PORT] {
+            _port = UInt16(port)
         }
         if _configFile == nil, let config = environment[STUBBY_CONFIG] {
             _configFile = config
@@ -49,15 +51,10 @@ public final class StubbyLoaderEnvironment {
         if let path = _path, !path.isEmpty {
             stubbyDir = URL(string: path)
         } else {
-            /// Used default path:  $PROJECT_DIR/stubby
-            let currentFilePath: String = #file
-            var pathComponents = currentFilePath.components(separatedBy: "/")
-            for path in pathComponents.reversed() {
-                pathComponents.removeLast()
-                guard path != "StubbyLoader" else { break }
-            }
-            let absolutePath = pathComponents.joined(separator: "/")
-            stubbyDir = URL(string: absolutePath)
+            /// Used default path:  $SRCROOT/stubby
+            let bundle = Bundle(for: StubbyLoaderEnvironment.self)
+            let frameworkPath = bundle.object(forInfoDictionaryKey: STUBBY_PATH) as? String
+            stubbyDir = URL(string: frameworkPath ?? "")?.standardized
             let defaultStubbyFolder = "stubby"
             stubbyDir = stubbyDir?.appendingPathComponent(defaultStubbyFolder)
         }

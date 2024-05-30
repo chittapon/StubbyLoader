@@ -26,5 +26,8 @@
     "Yams": [
       "~> 5.0.5"
     ]
+  },
+  "info_plist": {
+    "STUBBY_PATH": "${PODS_ROOT}/.."
   }
 }

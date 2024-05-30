@@ -86,8 +86,8 @@
       <EnvironmentVariables>
          <EnvironmentVariable
             key = "STUBBY_PATH"
-            value = "$PROJECT_DIR/stubby"
-            isEnabled = "YES">
+            value = "$(SRCROOT)/stubby"
+            isEnabled = "NO">
          </EnvironmentVariable>
          <EnvironmentVariable
             key = "STUBBY_PORT"
