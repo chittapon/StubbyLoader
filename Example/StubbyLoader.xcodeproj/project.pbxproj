@@ -8,8 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		3BE4AD68EB5015706AD83E2E /* Pods_StubbyLoader_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34B9D429F562E4C93B4F2098 /* Pods_StubbyLoader_Example.framework */; };
+		50677DD52C078B8C00AE4367 /* BundleFileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50677DD42C078B8C00AE4367 /* BundleFileViewController.swift */; };
+		50677DD72C078BD600AE4367 /* LocalFileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50677DD62C078BD600AE4367 /* LocalFileViewController.swift */; };
+		50677DD92C078C2500AE4367 /* CustomStubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50677DD82C078C2500AE4367 /* CustomStubViewController.swift */; };
+		50677DDB2C078C6F00AE4367 /* CustomEnvironmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50677DDA2C078C6F00AE4367 /* CustomEnvironmentViewController.swift */; };
+		50677DDD2C07BBE900AE4367 /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = 50677DDC2C07BBE900AE4367 /* users.json */; };
+		50677DE12C08EBF200AE4367 /* bundle_config.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 50677DDE2C08E84300AE4367 /* bundle_config.yaml */; };
+		50677DE62C0900FE00AE4367 /* posts in Resources */ = {isa = PBXBuildFile; fileRef = 50677DE52C0900FE00AE4367 /* posts */; };
+		509F7C5B2C06F42100A2D17A /* StubbyLoader_Resource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 509F7C4C2C06F0D800A2D17A /* StubbyLoader_Resource.bundle */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
+		607FACD81AFB9204008FA782 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* MainViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
@@ -18,6 +26,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		509F7C592C06F3A200A2D17A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 509F7C4B2C06F0D800A2D17A;
+			remoteInfo = StubbyLoader_Resource;
+		};
 		607FACE61AFB9204008FA782 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
@@ -31,12 +46,21 @@
 		25F536EE2855C3BFDC2DBA89 /* Pods-StubbyLoader_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StubbyLoader_Example.release.xcconfig"; path = "Target Support Files/Pods-StubbyLoader_Example/Pods-StubbyLoader_Example.release.xcconfig"; sourceTree = "<group>"; };
 		34B9D429F562E4C93B4F2098 /* Pods_StubbyLoader_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StubbyLoader_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		387EBEF036122B2E183A098E /* Pods_StubbyLoader_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StubbyLoader_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		401F69B0C4EFC41A37CC5F4C /* StubbyLoader.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = StubbyLoader.podspec; path = ../StubbyLoader.podspec; sourceTree = "<group>"; };
-		50288A6381457DAAAD159568 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		401F69B0C4EFC41A37CC5F4C /* StubbyLoader.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = StubbyLoader.podspec; path = ../StubbyLoader.podspec; sourceTree = "<group>"; };
+		50288A6381457DAAAD159568 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		50677DD42C078B8C00AE4367 /* BundleFileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleFileViewController.swift; sourceTree = "<group>"; };
+		50677DD62C078BD600AE4367 /* LocalFileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFileViewController.swift; sourceTree = "<group>"; };
+		50677DD82C078C2500AE4367 /* CustomStubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomStubViewController.swift; sourceTree = "<group>"; };
+		50677DDA2C078C6F00AE4367 /* CustomEnvironmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomEnvironmentViewController.swift; sourceTree = "<group>"; };
+		50677DDC2C07BBE900AE4367 /* users.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = users.json; sourceTree = "<group>"; };
+		50677DDE2C08E84300AE4367 /* bundle_config.yaml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = bundle_config.yaml; sourceTree = "<group>"; };
+		50677DE52C0900FE00AE4367 /* posts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = posts; sourceTree = "<group>"; };
+		509F7C4C2C06F0D800A2D17A /* StubbyLoader_Resource.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StubbyLoader_Resource.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		50C730F62C070D020058CED0 /* stubby */ = {isa = PBXFileReference; lastKnownFileType = folder; path = stubby; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* StubbyLoader_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StubbyLoader_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		607FACD71AFB9204008FA782 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -46,10 +70,17 @@
 		7E2D819C954D6F3AF484270B /* Pods-StubbyLoader_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StubbyLoader_Example.debug.xcconfig"; path = "Target Support Files/Pods-StubbyLoader_Example/Pods-StubbyLoader_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		B6E18462EC8A5BA4F494CC86 /* Pods-StubbyLoader_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StubbyLoader_Tests.release.xcconfig"; path = "Target Support Files/Pods-StubbyLoader_Tests/Pods-StubbyLoader_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		C2D9852F05080D5FD7E18B62 /* Pods-StubbyLoader_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StubbyLoader_Tests.debug.xcconfig"; path = "Target Support Files/Pods-StubbyLoader_Tests/Pods-StubbyLoader_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		E24F00B193327C743BA96170 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		E24F00B193327C743BA96170 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		509F7C492C06F0D800A2D17A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		607FACCD1AFB9204008FA782 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -69,11 +100,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		509F7C532C06F15700A2D17A /* ResourceBundle */ = {
+			isa = PBXGroup;
+			children = (
+				50677DE52C0900FE00AE4367 /* posts */,
+				50677DDE2C08E84300AE4367 /* bundle_config.yaml */,
+			);
+			path = ResourceBundle;
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				50C730F62C070D020058CED0 /* stubby */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for StubbyLoader */,
+				509F7C532C06F15700A2D17A /* ResourceBundle */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
 				B280EBD00BCE905D3B7FACBA /* Pods */,
@@ -86,6 +128,7 @@
 			children = (
 				607FACD01AFB9204008FA782 /* StubbyLoader_Example.app */,
 				607FACE51AFB9204008FA782 /* StubbyLoader_Tests.xctest */,
+				509F7C4C2C06F0D800A2D17A /* StubbyLoader_Resource.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,7 +137,12 @@
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				607FACD71AFB9204008FA782 /* MainViewController.swift */,
+				50677DD62C078BD600AE4367 /* LocalFileViewController.swift */,
+				50677DD42C078B8C00AE4367 /* BundleFileViewController.swift */,
+				50677DD82C078C2500AE4367 /* CustomStubViewController.swift */,
+				50677DDA2C078C6F00AE4367 /* CustomEnvironmentViewController.swift */,
+				50677DDC2C07BBE900AE4367 /* users.json */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -156,13 +204,29 @@
 				C2D9852F05080D5FD7E18B62 /* Pods-StubbyLoader_Tests.debug.xcconfig */,
 				B6E18462EC8A5BA4F494CC86 /* Pods-StubbyLoader_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		509F7C4B2C06F0D800A2D17A /* StubbyLoader_Resource */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 509F7C4F2C06F0D800A2D17A /* Build configuration list for PBXNativeTarget "StubbyLoader_Resource" */;
+			buildPhases = (
+				509F7C482C06F0D800A2D17A /* Sources */,
+				509F7C492C06F0D800A2D17A /* Frameworks */,
+				509F7C4A2C06F0D800A2D17A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StubbyLoader_Resource;
+			productName = "org.cocoapods.StubbyLoader-Resource";
+			productReference = 509F7C4C2C06F0D800A2D17A /* StubbyLoader_Resource.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 		607FACCF1AFB9204008FA782 /* StubbyLoader_Example */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "StubbyLoader_Example" */;
@@ -176,6 +240,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				509F7C5A2C06F3A200A2D17A /* PBXTargetDependency */,
 			);
 			name = StubbyLoader_Example;
 			productName = StubbyLoader;
@@ -211,6 +276,11 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
+					509F7C4B2C06F0D800A2D17A = {
+						CreatedOnToolsVersion = 15.3;
+						DevelopmentTeam = 622U72QGX2;
+						ProvisioningStyle = Automatic;
+					};
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 						LastSwiftMigration = 0900;
@@ -227,6 +297,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -237,15 +308,27 @@
 			targets = (
 				607FACCF1AFB9204008FA782 /* StubbyLoader_Example */,
 				607FACE41AFB9204008FA782 /* StubbyLoader_Tests */,
+				509F7C4B2C06F0D800A2D17A /* StubbyLoader_Resource */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		509F7C4A2C06F0D800A2D17A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50677DE62C0900FE00AE4367 /* posts in Resources */,
+				50677DE12C08EBF200AE4367 /* bundle_config.yaml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		607FACCE1AFB9204008FA782 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50677DDD2C07BBE900AE4367 /* users.json in Resources */,
+				509F7C5B2C06F42100A2D17A /* StubbyLoader_Resource.bundle in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
@@ -292,10 +375,14 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-StubbyLoader_Example/Pods-StubbyLoader_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/StubbyLoader/StubbyLoader.framework",
+				"${BUILT_PRODUCTS_DIR}/Swifter/Swifter.framework",
+				"${BUILT_PRODUCTS_DIR}/Yams/Yams.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/StubbyLoader.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swifter.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Yams.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -327,12 +414,23 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		509F7C482C06F0D800A2D17A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		607FACCC1AFB9204008FA782 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				607FACD81AFB9204008FA782 /* MainViewController.swift in Sources */,
+				50677DDB2C078C6F00AE4367 /* CustomEnvironmentViewController.swift in Sources */,
+				50677DD52C078B8C00AE4367 /* BundleFileViewController.swift in Sources */,
+				50677DD72C078BD600AE4367 /* LocalFileViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				50677DD92C078C2500AE4367 /* CustomStubViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,6 +445,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		509F7C5A2C06F3A200A2D17A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 509F7C4B2C06F0D800A2D17A /* StubbyLoader_Resource */;
+			targetProxy = 509F7C592C06F3A200A2D17A /* PBXContainerItemProxy */;
+		};
 		607FACE71AFB9204008FA782 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 607FACCF1AFB9204008FA782 /* StubbyLoader_Example */;
@@ -374,6 +477,80 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		509F7C4D2C06F0D800A2D17A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 622U72QGX2;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2567 BE CocoaPods. All rights reserved.";
+				INFOPLIST_KEY_NSPrincipalClass = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.botmoon.stubby.org-cocoapods-StubbyLoader-Resource";
+				PRODUCT_NAME = StubbyLoader_Resource;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		509F7C4E2C06F0D800A2D17A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 622U72QGX2;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2567 BE CocoaPods. All rights reserved.";
+				INFOPLIST_KEY_NSPrincipalClass = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.botmoon.stubby.org-cocoapods-StubbyLoader-Resource";
+				PRODUCT_NAME = StubbyLoader_Resource;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 		607FACED1AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -479,6 +656,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = StubbyLoader/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -493,13 +671,17 @@
 			baseConfigurationReference = 25F536EE2855C3BFDC2DBA89 /* Pods-StubbyLoader_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EXCLUDED_SOURCE_FILE_NAMES = StubbyLoader_Resource.bundle;
 				INFOPLIST_FILE = StubbyLoader/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -516,6 +698,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -534,6 +717,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -546,6 +730,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		509F7C4F2C06F0D800A2D17A /* Build configuration list for PBXNativeTarget "StubbyLoader_Resource" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				509F7C4D2C06F0D800A2D17A /* Debug */,
+				509F7C4E2C06F0D800A2D17A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "StubbyLoader" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

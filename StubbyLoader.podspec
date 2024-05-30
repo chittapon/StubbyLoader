@@ -28,9 +28,9 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/Chittapon Thongchim/StubbyLoader.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '11.0'
 
-  s.source_files = 'StubbyLoader/Classes/**/*'
+  s.source_files = 'StubbyLoader/Sources/**/*'
   
   # s.resource_bundles = {
   #   'StubbyLoader' => ['StubbyLoader/Assets/*.png']
@@ -38,5 +38,6 @@ TODO: Add long description of the pod here.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'Swifter', '~> 1.5.0'
+  s.dependency 'Yams', '~> 5.0.5'
 end

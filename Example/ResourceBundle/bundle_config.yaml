@@ -1,0 +1,9 @@
+- request:
+    method: POST
+    url: /posts
+  response:
+    status: 200
+    file: /posts/posts.json
+    headers:
+      Content-Type: application/json
+
