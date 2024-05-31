@@ -15,16 +15,17 @@ final class FileMonitor {
 
     let url: URL
     var fileHandle: FileHandle?
-    var source: DispatchSourceFileSystemObject!
+    var source: DispatchSourceFileSystemObject?
     weak var delegate: FileMonitorDelegate?
     let queue = DispatchQueue(label: "FileMonitor", qos: .default)
+    var previousData: Data?
     
     init(url: URL) throws {
         self.url = url
     }
 
     deinit {
-        source.cancel()
+        source?.cancel()
     }
     
     func start() throws {
@@ -37,15 +38,17 @@ final class FileMonitor {
             queue: queue
         )
 
-        source.setEventHandler { [self] in
+        source?.setEventHandler { [self] in
             self.processEvent()
         }
 
-        source.setCancelHandler {
+        source?.setCancelHandler {
             fileHandle.closeFile()
         }
         
-        source.resume()
+        previousData = fileHandle.readDataToEndOfFile()
+        
+        source?.resume()
     }
     
     func stop() {
@@ -53,10 +56,11 @@ final class FileMonitor {
     }
 
     func processEvent() {
-        let event = source.data
-        guard event.contains(.delete) || event.contains(.rename) else {
+        let data = fileHandle?.readDataToEndOfFile()
+        guard data != previousData else {
             return
         }
+        previousData = data
         stop()
         try? start()
         delegate?.fileDidChange(url.path)

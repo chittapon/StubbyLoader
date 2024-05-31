@@ -53,8 +53,8 @@ public final class StubbyLoaderEnvironment {
         } else {
             /// Used default path:  $SRCROOT/stubby
             let bundle = Bundle(for: StubbyLoaderEnvironment.self)
-            let frameworkPath = bundle.object(forInfoDictionaryKey: STUBBY_PATH) as? String
-            stubbyDir = URL(string: frameworkPath ?? "")?.standardized
+            let path = bundle.object(forInfoDictionaryKey: STUBBY_PATH) as? String
+            stubbyDir = URL(string: path ?? "")?.standardized
             let defaultStubbyFolder = "stubby"
             stubbyDir = stubbyDir?.appendingPathComponent(defaultStubbyFolder)
         }

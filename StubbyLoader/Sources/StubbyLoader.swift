@@ -136,12 +136,12 @@ public final class StubbyLoader: NSObject {
     func addRoute(stubModel: StubModel) {
         guard let response = stubModel.response else { return }
         let statusCode = response.status
-        let headers = getHeaders(override: response.headers)
         if let filePath = response.file {
             server[stubModel.request.url] = { request in
                 if let customResponse = self.stubClosure?(request) {
                     return customResponse
                 }
+                let headers = self.getHeaders(override: response.headers)
                 return HttpResponse.raw(statusCode, "", headers) { writer in
                     if response.isAbsolutePath ?? false {
                         try self.writeFile(filePath, writer: writer)
@@ -157,6 +157,7 @@ public final class StubbyLoader: NSObject {
                 if let customResponse = self.stubClosure?(request) {
                     return customResponse
                 }
+                let headers = self.getHeaders(override: response.headers)
                 return HttpResponse.raw(statusCode, "", headers) { writer in
                     try self.writeBody(body, writer: writer)
                 }
