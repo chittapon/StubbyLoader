@@ -15,6 +15,10 @@
 		50677DDD2C07BBE900AE4367 /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = 50677DDC2C07BBE900AE4367 /* users.json */; };
 		50677DE12C08EBF200AE4367 /* bundle_config.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 50677DDE2C08E84300AE4367 /* bundle_config.yaml */; };
 		50677DE62C0900FE00AE4367 /* posts in Resources */ = {isa = PBXBuildFile; fileRef = 50677DE52C0900FE00AE4367 /* posts */; };
+		508862702C09C25B00AA4404 /* StubbyLoader_ExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5088626F2C09C25B00AA4404 /* StubbyLoader_ExampleUITests.swift */; };
+		5088627B2C09C56D00AA4404 /* comments.json in Resources */ = {isa = PBXBuildFile; fileRef = 5088627A2C09C56D00AA4404 /* comments.json */; };
+		5088627D2C09CE5F00AA4404 /* config.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 5088627C2C09CE5F00AA4404 /* config.yaml */; };
+		5088627F2C09CE7700AA4404 /* custom_env.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 5088627E2C09CE7700AA4404 /* custom_env.yaml */; };
 		509F7C5B2C06F42100A2D17A /* StubbyLoader_Resource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 509F7C4C2C06F0D800A2D17A /* StubbyLoader_Resource.bundle */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* MainViewController.swift */; };
@@ -26,6 +30,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		508862732C09C25B00AA4404 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 607FACCF1AFB9204008FA782;
+			remoteInfo = StubbyLoader_Example;
+		};
 		509F7C592C06F3A200A2D17A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
@@ -55,6 +66,11 @@
 		50677DDC2C07BBE900AE4367 /* users.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = users.json; sourceTree = "<group>"; };
 		50677DDE2C08E84300AE4367 /* bundle_config.yaml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = bundle_config.yaml; sourceTree = "<group>"; };
 		50677DE52C0900FE00AE4367 /* posts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = posts; sourceTree = "<group>"; };
+		5088626D2C09C25B00AA4404 /* StubbyLoader_ExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StubbyLoader_ExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5088626F2C09C25B00AA4404 /* StubbyLoader_ExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubbyLoader_ExampleUITests.swift; sourceTree = "<group>"; };
+		5088627A2C09C56D00AA4404 /* comments.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = comments.json; sourceTree = "<group>"; };
+		5088627C2C09CE5F00AA4404 /* config.yaml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = config.yaml; sourceTree = "<group>"; };
+		5088627E2C09CE7700AA4404 /* custom_env.yaml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = custom_env.yaml; sourceTree = "<group>"; };
 		509F7C4C2C06F0D800A2D17A /* StubbyLoader_Resource.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StubbyLoader_Resource.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		50C730F62C070D020058CED0 /* stubby */ = {isa = PBXFileReference; lastKnownFileType = folder; path = stubby; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* StubbyLoader_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StubbyLoader_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,6 +90,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5088626A2C09C25B00AA4404 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		509F7C492C06F0D800A2D17A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -100,6 +123,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5088626E2C09C25B00AA4404 /* StubbyLoader_ExampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5088626F2C09C25B00AA4404 /* StubbyLoader_ExampleUITests.swift */,
+				5088627A2C09C56D00AA4404 /* comments.json */,
+				5088627C2C09CE5F00AA4404 /* config.yaml */,
+				5088627E2C09CE7700AA4404 /* custom_env.yaml */,
+			);
+			path = StubbyLoader_ExampleUITests;
+			sourceTree = "<group>";
+		};
 		509F7C532C06F15700A2D17A /* ResourceBundle */ = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +151,7 @@
 				607FACD21AFB9204008FA782 /* Example for StubbyLoader */,
 				509F7C532C06F15700A2D17A /* ResourceBundle */,
 				607FACE81AFB9204008FA782 /* Tests */,
+				5088626E2C09C25B00AA4404 /* StubbyLoader_ExampleUITests */,
 				607FACD11AFB9204008FA782 /* Products */,
 				B280EBD00BCE905D3B7FACBA /* Pods */,
 				97F3F76D56BBE49CA71EFD9D /* Frameworks */,
@@ -129,6 +164,7 @@
 				607FACD01AFB9204008FA782 /* StubbyLoader_Example.app */,
 				607FACE51AFB9204008FA782 /* StubbyLoader_Tests.xctest */,
 				509F7C4C2C06F0D800A2D17A /* StubbyLoader_Resource.bundle */,
+				5088626D2C09C25B00AA4404 /* StubbyLoader_ExampleUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -210,6 +246,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		5088626C2C09C25B00AA4404 /* StubbyLoader_ExampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 508862772C09C25B00AA4404 /* Build configuration list for PBXNativeTarget "StubbyLoader_ExampleUITests" */;
+			buildPhases = (
+				508862692C09C25B00AA4404 /* Sources */,
+				5088626A2C09C25B00AA4404 /* Frameworks */,
+				5088626B2C09C25B00AA4404 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				508862742C09C25B00AA4404 /* PBXTargetDependency */,
+			);
+			name = StubbyLoader_ExampleUITests;
+			productName = StubbyLoader_ExampleUITests;
+			productReference = 5088626D2C09C25B00AA4404 /* StubbyLoader_ExampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		509F7C4B2C06F0D800A2D17A /* StubbyLoader_Resource */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 509F7C4F2C06F0D800A2D17A /* Build configuration list for PBXNativeTarget "StubbyLoader_Resource" */;
@@ -272,10 +326,16 @@
 		607FACC81AFB9204008FA782 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
+				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
+					5088626C2C09C25B00AA4404 = {
+						CreatedOnToolsVersion = 15.4;
+						DevelopmentTeam = 622U72QGX2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 607FACCF1AFB9204008FA782;
+					};
 					509F7C4B2C06F0D800A2D17A = {
 						CreatedOnToolsVersion = 15.3;
 						DevelopmentTeam = 622U72QGX2;
@@ -309,11 +369,22 @@
 				607FACCF1AFB9204008FA782 /* StubbyLoader_Example */,
 				607FACE41AFB9204008FA782 /* StubbyLoader_Tests */,
 				509F7C4B2C06F0D800A2D17A /* StubbyLoader_Resource */,
+				5088626C2C09C25B00AA4404 /* StubbyLoader_ExampleUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		5088626B2C09C25B00AA4404 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5088627B2C09C56D00AA4404 /* comments.json in Resources */,
+				5088627D2C09CE5F00AA4404 /* config.yaml in Resources */,
+				5088627F2C09CE7700AA4404 /* custom_env.yaml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		509F7C4A2C06F0D800A2D17A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -414,6 +485,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		508862692C09C25B00AA4404 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				508862702C09C25B00AA4404 /* StubbyLoader_ExampleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		509F7C482C06F0D800A2D17A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -445,6 +524,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		508862742C09C25B00AA4404 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 607FACCF1AFB9204008FA782 /* StubbyLoader_Example */;
+			targetProxy = 508862732C09C25B00AA4404 /* PBXContainerItemProxy */;
+		};
 		509F7C5A2C06F3A200A2D17A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 509F7C4B2C06F0D800A2D17A /* StubbyLoader_Resource */;
@@ -477,6 +561,73 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		508862752C09C25B00AA4404 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 622U72QGX2;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.StubbyLoader-ExampleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StubbyLoader_Example;
+			};
+			name = Debug;
+		};
+		508862762C09C25B00AA4404 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 622U72QGX2;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.StubbyLoader-ExampleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StubbyLoader_Example;
+			};
+			name = Release;
+		};
 		509F7C4D2C06F0D800A2D17A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -730,6 +881,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		508862772C09C25B00AA4404 /* Build configuration list for PBXNativeTarget "StubbyLoader_ExampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				508862752C09C25B00AA4404 /* Debug */,
+				508862762C09C25B00AA4404 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		509F7C4F2C06F0D800A2D17A /* Build configuration list for PBXNativeTarget "StubbyLoader_Resource" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -61,6 +61,17 @@
                ReferencedContainer = "container:StubbyLoader.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "5088626C2C09C25B00AA4404"
+               BuildableName = "StubbyLoader_ExampleUITests.xctest"
+               BlueprintName = "StubbyLoader_ExampleUITests"
+               ReferencedContainer = "container:StubbyLoader.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
